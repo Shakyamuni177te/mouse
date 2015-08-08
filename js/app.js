@@ -17,7 +17,7 @@ $(function() {
     events: {
       "click button": "addProposal"
     },
-   
+
     addProposal: function() {
       var text = this.$("textarea").val();
       if (text !== "") {
@@ -72,14 +72,14 @@ $(function() {
     // Inventory list
     var InventoryView = Marionette.ItemView.extend({
     tagName: "div",
-    template: require("../templates/page1.html"),
+    template: require("../templates/inventory.html"),
     childView: VotingView,
     childViewContainer: ".childViewContainer"
   });
    // View for the list of spells
   var SpellView = Marionette.ItemView.extend({
     tagName: "div",
-    template: require("../templates/page1.html"),
+    template: require("../templates/spells.html"),
     childView: VotingView,
     childViewContainer: ".childViewContainer"
   });
@@ -87,28 +87,28 @@ $(function() {
  // View for emotional states
   var EmotionsView = Marionette.ItemView.extend({
     tagName: "div",
-    template: require("../templates/page1.html"),
+    template: require("../templates/emotions.html"),
     childView: VotingView,
     childViewContainer: ".childViewContainer"
   });
 
 
- // View for emotional states
+ // Character screen
   var CharactersView = Marionette.ItemView.extend({
     tagName: "div",
-    template: require("../templates/page1.html"),
+    template: require("../templates/characters.html"),
     childView: VotingView,
     childViewContainer: ".childViewContainer"
   });
 
- // View for emotional states
+ // View for battle screen
   var BattleView = Marionette.ItemView.extend({
     tagName: "div",
-    template: require("../templates/page1.html"),
+    template: require("../templates/battle.html"),
     childView: VotingView,
     childViewContainer: ".childViewContainer"
   });
- 
+
 
   // View for login info (tracks logged in user)
   var TopToolbarView = Marionette.ItemView.extend({
@@ -195,8 +195,8 @@ $(function() {
       this.main.empty();
       this.main.show(new EmotionsView());
      },
-       battle: function() {
-       $("#battleButton").click(function() {
+       characters: function() {
+       $("#charactersButton").click(function() {
        $(this).effect("fade");
       });
       this.top.empty();
@@ -204,8 +204,8 @@ $(function() {
       this.main.empty();
       this.main.show(new CharactersView());
      },
-       characters: function() {
-       $("#charactersButton").click(function() {
+       battle: function() {
+       $("#battleButton").click(function() {
        $(this).effect("fade");
       });
       this.top.empty();
