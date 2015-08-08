@@ -1,5 +1,5 @@
-# democracy
-Online voting app
+# Order of the Mouse
+Web-based game of spiritual dimensions
 
 ##Status
 
