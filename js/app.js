@@ -11,6 +11,7 @@ $(function() {
   // Collection of proposals
   var proposals = new Backbone.Collection();
 
+<<<<<<< HEAD
   // View for the Add Proposal form
   var ProposalForm = Marionette.ItemView.extend({
     template: require("../templates/page1.html"),
@@ -50,6 +51,8 @@ $(function() {
     childViewContainer: ".childViewContainer"
   });
 
+=======
+>>>>>>> b39b5e8417924af88f1fe97ba6db717272d59906
   // View for a single votable proposals (a row in the proposals table)
   var VotingView = Marionette.ItemView.extend({
     tagName: "tr",
