@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+		<title>Order of the Mouse</title>
+		 <meta name="author" content="Peter David Carter">
+		<link rel="stylesheet" type="text/css" href="css/gameframe.css">
+		<link rel="favicon" type="image/png" href="../public/img/orderico4.png"/>
+	</head>
+	<body>
+		<!-- Base element for app -->
+		<div id="AppBase"></div>
+
+		<!-- main layout template -->
+		<script type="text/template" id="template-AppLayoutView">
+			<div id="topbar">
+				<div class="corner-icon">
+				<img src="img/orderico5.png" height="40" width="38"/>
+				</div>
+				<div id="navigation-bar">
+					<a id="nav-start" class="navButton" href="#start">Start Again</a>&nbsp;&nbsp;
+					<a id="nav-home" class="navButton" href="#home">Game</a>&nbsp;&nbsp;
+					<a id="nav-skills" class="navButton" href="#skills">Skills</a>&nbsp;&nbsp;
+					<a id="nav-inventory" class="navButton" href="#inventory">Inventory</a>&nbsp;&nbsp;
+					<a id="nav-relationships" class="navButton" href="#relationships">Relationships</a>&nbsp;&nbsp;
+					<a id="nav-friends" class="navButton" href="#friends">Friends</a>&nbsp;&nbsp;
+					<a id="nav-magic" class="navButton" href="#magic">Magic</a>
+				</div>
+			</div>
+			<div id="left-sidebar">
+				<div class="sidebar-text">
+				<p>HP<p/>
+				<p>Class</p>
+				<p>Network</p>
+				<p>Intoxication</p>
+				<p>Resonant Frequency<p/>
+				</div>
+			</div>
+			<div id="ContentRegion"></div>
+			</div>
+		</script>
+
+		<!-- start screen template -->
+		<script type="text/template" id="template-StartLayoutView">
+			<div id="main-text">
+				<h1 class="title">The Order of the Mouse</br></h1>
+				<h2 class="title">Dragon-Bear, Clown-Fox and Rabbit-Cat experience horror within the Castle of Cages and Revolving Walls.</h2>
+				</br>
+				<div class="button">
+				<a id="nav-home" class="navButton" href="#home"><button type="button" id="StartGameButton">New Game</button></a>
+				</div>
+				<div class="button">
+				<a id="nav-home" class="navButton" href="#home"><button type="button" id="StartGameButton">Continue Game</button></a>
+				</div>
+				</br></br></br></br>
+				<div class="button">
+				<a id="nav-pagecreate" class="navButton" href="gamecreator"><button type="button" id="CreatorButton">Create World</button></a>
+				</div><div class="button">
+				<a id="nav-worldmanage" class="navButton" href="#worldmanager"><button type="button" id="WorldManageButton">Manage World</button></a>
+				</div>
+			</div>
+		</script>
+
+		<!-- start basic page creation template **REMOVE FROM THIS SECTION!!** -->
+		<script type="text/template" id="template-PageCreateLayoutView">
+			<div id="main-text">
+				<h1 class="title">Create Basic Game Page</h1>
+				<div id="input-area">
+					<p alt="the number or name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+
+		<!-- home screen template -->
+		<script type="text/template" id="template-HomeLayoutView">
+		<div id="main-content">
+			<div id="home">
+			<p><i>"If naked is the most honest you can be and society teaches you it's dirty and corrupt and a sin then no wonder this is the world we live in" -- Leon De Sade</i></p>
+
+			<p>When Rabbit-Cat entered the forest, Clown-Fox had already removed his clothes and was dancing around the camp-fire, his bright tail burning like
+			flames around the bright of the flames, moving with an intensity that seemed almost dangerous, unnerving. He smiled at her as he caught her eye, and
+			he stared at her as he continued to dance. She had not seen any creature like him before and the sight of him made her want to hide her face in her clothes,
+			to cover her fur with the soft fuzz of her paws and peek out at him from under them like a timid huntress -- to watch his impressive, scandalous dance with
+			eyes that would then be hidden from him. She found that she could not. Rather, she stood there in the forest clearing and the flame burned brighter and
+			brighter. All around were small huts, and around the fire mingled groups of Deer-Foxes, Night-Foxes and Bird-Foxes, as well as a host of more ordinary
+			animals. More ordinary rabbits, birds and a few weasels hopped and scurried about. A lizard crawled across a tree and down into a thicket. All around the
+			movement of the village arranged itself according to its whim, but the more she watched them move, the more she realised the reason for Clown-Fox's dancing.
+			Clown-Fox was conducting them all with his movements, though somehow they did not know it.</p>
+
+			<p>As Rabbit-Cat continued to watch the unfolding scene, Clown-Fox's dancing became steadily faster, more intense and full of flourishes and clever fox
+			trickery. The faster he danced the brighter the fire became, until at last it seemed that the whole of the forest clearing was on fire and Rabbit-Bean was
+			within it, being slowly consumed by the burning, charring light that lapped against her fir and skin and eyes and tiny, rabbit nose, and yet still did not
+			pain her.</p>
+
+			<p>Then, without warning, came an explosion, a cloud of dust, and suddenly the image before her had changed. Rabbit-Cat awoke in a tiny cell within the wizard's house.
+			His beard was long and his eyes we large. He looked down at Rabbit-Cat with a sneering expression on his face. Beside her was a cage within which Clown-Fox
+			sat on his haunches. Rabbit-Cat looked again at his eye which were no longer the beautiful, deep brown foxy hue they had been previously, but now swirled deep
+			black and green in a sinister hypnotic pattern. The wizard looked down at Rabbit-Cat, prostrate on the floor beneath him and smiled, the edges of his mouth
+			curling up as he did so. Rabbit-Cat did not like his smile. Now she wanted to hide for real, but she could not. Now her clothes too were gone, and some
+			unseen force pinned her to the ground as the robed wizard stooped towards her, his smiling growing wider as he did so. It was then that Rabbit-Cat decided
+			she would like to die. A feeling she would carry with her for many years afterwards.</p>
+			</div>
+		</div>
+		</script>
+
+		<!-- skills screen template -->
+		<script type="text/template" id="template-SkillsLayoutView">
+		<div id="main-content">
+			<div class="skills">
+    			<h1>Skills</h1>
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-InventoryLayoutView">
+		<div id="main-content">
+			<div class="inventory">
+    			<h1>Inventory</h1>
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-FriendsLayoutView">
+		<div id="main-content">
+		    <div class="friends">
+		    	<h1>Friends</h1>
+		    </div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-RelationshipsLayoutView">
+		<div id="main-content">
+			<div class="relationships">
+				<h1>Relationships</h1>
+    		</div>
+		</div>
+		</script>
+
+		<script type="text/template" id="template-MagicLayoutView">
+		<div id="main-content">
+			<div class="magic">
+				<h1>Magic</h1>
+    		</div>
+		</div>
+		</script>
+
+		<!-- libraries -->
+		<script type="text/javascript" src="vendor/jquery.js"></script>
+		<script type="text/javascript" src="vendor/underscore.js"></script>
+		<script type="text/javascript" src="vendor/backbone.js"></script>
+		<script type="text/javascript" src="vendor/backbone.marionette.js"></script>
+
+		<!-- app code -->
+		<script type="text/javascript" src="js/gamebackbone.js"></script>
+	</body>
+</html>

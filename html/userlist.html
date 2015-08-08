@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ 
+  <title>User List</title>
+  <meta name="description" content="User List">
+  <meta name="author" content="Peter David Carter">
+  
+</head>
+ 
+<body>
+  <h1>User List</h1>
+  <% for (u in userlist) { %>
+      <li><a href="mailto:<%=userlist[u].email %>" %>
+      <%= userlist[u].username %></a>
+      </li>
+  <% } %>
+</body>
+</html>
