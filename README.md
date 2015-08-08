@@ -1,5 +1,5 @@
 # Order of the Mouse
-Web-based game of spiritual dimensions
+Web-based game of spiritual dimensions.
 
 ##Status
 
