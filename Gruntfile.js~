@@ -1,0 +1,30 @@
+/* eslint-env node */
+
+module.exports = function(grunt) {
+
+  "use strict";
+
+  grunt.initConfig({
+    browserify: {
+      dist: {
+        src: ["resources/js/app.js"],
+        dest: "built.js",
+        options: {
+          transform: ["node-underscorify"],
+          debug: true,
+          external: ["jquery", "underscore", "backbone", "backbone.marionette"]
+        }
+      }
+    },
+    watch: {
+      files: ["./resources/js/*.js", "./resources/css/*.css" "./resources/css/*.img" "./resources/doc/*.*"],
+      tasks: ["browserify"]
+    }
+  });
+
+  grunt.loadNpmTasks("grunt-browserify");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+
+  grunt.registerTask("default", ["browserify"]);
+
+};
