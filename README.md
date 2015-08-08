@@ -5,7 +5,7 @@ Web-based game of spiritual dimensions
 
 Alpha
 
-## Development setup
+## Setup
 * Install grunt: ```sudo npm install -g grunt```
 * Install local dependencies: ```npm install```
 * Create your first build: ```grunt```
