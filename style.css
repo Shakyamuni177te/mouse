@@ -1,10 +1,10 @@
 body {
-    background-color: #5a2952;
+    background-color: #ffd5ee;
     margin: 10px;
     padding: 10px;
 }
 #container {
-  min-width: 1024px;
+  min-width: 1154px;
   max-width: 1920px;
   min-height: 568px;
   max-height: 768px;
@@ -92,6 +92,23 @@ input {
 padding: 0px;
 }
 
+#avatar {
+  position: relative;
+  left: -124px;
+  top: -40px;
+  border-radius: 5px;
+}
+
+#name {
+  padding: 0px;
+  font-weight: bold;
+}
+
+#loggedInText
+{
+  padding: 0px;
+}
+
 #topToolbar {
   margin-bottom: 70px;
   top: -40px;
@@ -105,44 +122,12 @@ padding: 0px;
   margin-right: 10px;
 }
 
-#avatar {
-  position: relative;
-  left: 97px;
-  top: -40px;
-  border-radius: 5px;
-}
-
-#addMotionsButton {
-}
-
-#manageMotionsButton {
-left: 80px;
-}
-
-#voteButton {
-left: 120px;
-}
-
-#logoutButton {
-left: 220px;
-}
-
 #loginStatus {
   position: relative;
   height: 50px;
   float: right;
   margin-right: 20px;
   top: -47px;
-}
-
-#name {
-  padding: 0px;
-  font-weight: bold;
-}
-
-#loggedInText
-{
-  padding: 0px;
 }
 
 .form-row {
